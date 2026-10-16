@@ -1,0 +1,9 @@
+BEGIN:VCARD
+VERSION:4.0
+KIND:org
+FN:Defacto Tech
+ORG:Defacto Tech
+TEL;TYPE=work,voice;VALUE=uri:tel:+447598816778
+EMAIL;TYPE=work:hello@defacto-tech.co.uk
+URL:https://defacto-tech.co.uk
+END:VCARD
