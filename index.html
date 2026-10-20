@@ -151,6 +151,40 @@ footer { padding:48px 0 26px; }
 .footer-bottom { display:flex; justify-content:space-between; gap:24px; font-size:.82rem; line-height:1.5; }
 .footer-links { display:flex; gap:18px; flex-wrap:wrap; }
 .footer-links a { text-decoration:none; }
+
+#areas > div {
+    display: grid;
+    grid-template-columns: 1.2rem minmax(0, 1fr);
+    align-items: start;
+}
+
+#areas .icon {
+    grid-column: 1;
+    grid-row: 1 / 3;
+}
+
+#areas span {
+    grid-column: 2;
+}
+
+#areas ul {
+    grid-column: 2;
+    display: grid;
+    font-size: 0.85rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.35rem 1.5rem;
+    margin: 0.3rem 0 0;
+    padding: 0;
+}
+
+@media (max-width: 480px) {
+    #areas ul {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 0.75rem;
+    }
+}
+
+
 @media (max-width:1100px) {
     .services { grid-template-columns:repeat(3,1fr); }
     .about-grid { grid-template-columns:1fr 1.35fr; }
@@ -205,7 +239,7 @@ footer { padding:48px 0 26px; }
             <section class="hero">
                 <div class="wrap hero-inner">
                     <div class="hero-copy">
-                        <div class="eyebrow">Local on-site support across Kirklees and Calderdale</div>
+                        <div class="eyebrow">On-site support across Huddersfield, surrounding areas, and Calderdale</div>
                         <h1 class="display">Practical tech support<br>for home &amp; business.</h1>
                         <p>Straightforward, reliable assistance with IT and
                         other technology for households, sole traders and small
@@ -368,12 +402,25 @@ footer { padding:48px 0 26px; }
                         <div><img class="icon" src="icons/whatsapp-logo.svg" alt=""><a href="https://wa.me/447598816778">WhatsApp↗</a></div>
                         <div><img class="icon" src="icons/mail.svg" alt=""><a class="u-email" href="mailto:hello@defacto-tech.co.uk">hello@defacto-tech.co.uk</a></div>
                         <div><img class="icon" src="icons/globe.svg" alt=""><a class="u-url" href="https://defacto-tech.co.uk">defacto-tech.co.uk</a></div>
-                        <div><img class="icon" src="icons/address-book.svg" alt=""><a href="defacto-tech.vcf" type="text/vcard" download>Save contact</a></div>
                     </address>
                     <div class="contact-list" id="areas">
                         <div>
                             <img class="icon" src="icons/map-pin.svg" alt="">
-                            <span>Based locally<br>Covering Kirklees and Calderdale</span>
+                            <span>
+                                Huddersfield, Calderdale and
+                                surrounding areas, including:
+                            </span>
+                            <ul>
+                                <li>Holmfirth</li>
+                                <li>Honley</li>
+                                <li>Meltham</li>
+                                <li>Slaithwaite</li>
+                                <li>Marsden</li>
+                                <li>Brighouse</li>
+                                <li>Elland</li>
+                                <li>Halifax</li>
+                                <li>Hebden Bridge</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
